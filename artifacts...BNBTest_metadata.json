@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"bnbTest.sol": "BNBTest"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"bnbTest.sol": {
+			"keccak256": "0x07c695767047db2c787e31daddc004da1823cae0646a4675889da6ccb57e09da",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://88c2334623ce0a3da608cc38bd88a644eecc2fd311cf9b6fdd2cbebd350d5210",
+				"dweb:/ipfs/QmSdEGpgivzofeZFAtuPsMNZjRhQuYWo8MNnSd5momEFzB"
+			]
+		}
+	},
+	"version": 1
+}

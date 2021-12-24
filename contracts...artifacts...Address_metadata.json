@@ -1,0 +1,46 @@
+{
+	"compiler": {
+		"version": "0.8.10+commit.fc410830"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"details": "Collection of functions related to the address type",
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Address.sol": "Address"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Address.sol": {
+			"keccak256": "0xf5840140d2de12788709cff96daeb28f358e27f05cc97c6bc8f3463d2ab8a92d",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://80140f484231a0cf0fe6ef397345f2b5d6933be986cefda0d36b0f2de48428db",
+				"dweb:/ipfs/QmXq6L2tZpXYGermnF1ArYQYrzbVX4YKnTeCd94poPeZs6"
+			]
+		}
+	},
+	"version": 1
+}

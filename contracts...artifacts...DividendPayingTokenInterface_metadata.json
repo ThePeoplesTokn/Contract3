@@ -1,0 +1,205 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "weiAmount",
+						"type": "uint256"
+					}
+				],
+				"name": "DividendWithdrawn",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "weimount",
+						"type": "uint256"
+					}
+				],
+				"name": "DividendsDistributed",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "distributeDividends",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "dividendOf",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "withdrawDividend",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/tpt.sol": "DividendPayingTokenInterface"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": true,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/access/Ownable.sol": {
+			"keccak256": "0x6bb804a310218875e89d12c053e94a13a4607cdf7cc2052f3e52bd32a0dc50a1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b2ebbbe6d0011175bd9e7268b83de3f9c2f9d8d4cbfbaef12aff977d7d727163",
+				"dweb:/ipfs/Qmd5c7Vxtis9wzkDNhxwc6A2QT5H9xn9kfjhx7qx44vpro"
+			]
+		},
+		"@openzeppelin/contracts/interfaces/IERC20Metadata.sol": {
+			"keccak256": "0xb533e8f3f70ec14607fa8818c2fdee2603790d43ca00b79bdfba696a517aeaab",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://98f5b06431188ab6dcfcea7da340b64db842eb083dfae6f0e382c2af50c408c7",
+				"dweb:/ipfs/QmTjBQaovk7bDpYVcqQFV3KcLqAyY2iJfKcsQ2LSTmLChy"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0x027b891937d20ccf213fdb9c31531574256de774bda99d3a70ecef6e1913ed2a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://087318b21c528119f649899f5b5580566dd8d7b0303d4904bd0e8580c3545f14",
+				"dweb:/ipfs/Qmbn5Mj7aUn8hJuQ8VrQjjEXRsXyJKykgnjR9p4C3nfLtL"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
+			"keccak256": "0x83fe24f5c04a56091e50f4a345ff504c8bff658a76d4c43b16878c8f940c53b2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d4c3df1a7ca104b633a7d81c6c6f5192367d150cd5a32cba81f7f27012729013",
+				"dweb:/ipfs/QmSim72e3ZVsfgZt8UceCvbiSuMRHR6WDsiamqNzZahGSY"
+			]
+		},
+		"@openzeppelin/contracts/utils/Context.sol": {
+			"keccak256": "0x90565a39ae45c80f0468dc96c7b20d0afc3055f344c8203a0c9258239f350b9f",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://26e8b38a7ac8e7b4463af00cf7fff1bf48ae9875765bf4f7751e100124d0bc8c",
+				"dweb:/ipfs/QmWcsmkVr24xmmjfnBQZoemFniXjj3vwT78Cz6uqZW1Hux"
+			]
+		},
+		"@openzeppelin/contracts/utils/math/SafeMath.sol": {
+			"keccak256": "0x8666f020bd8fc9dc14f07e2ebc52b5f236ab4cdde7c77679b08cb2f94730043b",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://163776cbf565c722232393aa2d62cbe8a2ffb5805986abf4906c00e1e07450a6",
+				"dweb:/ipfs/QmPZoN9T3cb6o8bGhjBPZcz7im8T8DWhpr3tjLwhJJHx9N"
+			]
+		},
+		"contracts/Address.sol": {
+			"keccak256": "0xf5840140d2de12788709cff96daeb28f358e27f05cc97c6bc8f3463d2ab8a92d",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://80140f484231a0cf0fe6ef397345f2b5d6933be986cefda0d36b0f2de48428db",
+				"dweb:/ipfs/QmXq6L2tZpXYGermnF1ArYQYrzbVX4YKnTeCd94poPeZs6"
+			]
+		},
+		"contracts/ERC20.sol": {
+			"keccak256": "0xf4489e4b91a583d4a7d0479869b51cc317bf291759b80485957dbb4f1bf407a2",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://d784b11573f8feee7ad739fc55d026536dd3ff2d9f55c0e8f200de33954eda3b",
+				"dweb:/ipfs/QmSHrhXykWVUeLduuofMwnKytHW9bxYbTKuNWWtqkowXwx"
+			]
+		},
+		"contracts/IterableMapping.sol": {
+			"keccak256": "0xba7adaa6907b8d5ecde289d33f71d9b1547ea8ff7e99828c6fc07c695b5609e7",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://8068f1c9288c740522c39ba7057cb8a812fcde2b820818e6029de498ef4c3be6",
+				"dweb:/ipfs/QmXP4ZRFzbmHoNcBL3EMvGUE7cqw1WcNB2DKSRZrCt6voc"
+			]
+		},
+		"contracts/SafeMathInt.sol": {
+			"keccak256": "0x3c84e02fa5f36b2de387a25bbe72980de6fa342bef62c05b2d946cae297a424b",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://a49958181018423ff98782f550cc580090c6920ad7184827f34beea8b5b6c761",
+				"dweb:/ipfs/QmVAp2Nk3ZpWwdWNs6qweuWBrgxAUKk4cLsr3wUUarednp"
+			]
+		},
+		"contracts/UniSwap.sol": {
+			"keccak256": "0xb39cc969c9cc9143574672ae9eef0b12acab561c3ae31b34c9ffefcde63717fb",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://d0b6ee18c60197ef7bfdc2766f78faa4721ed40c0f8ce70ccd4eca66aaad9550",
+				"dweb:/ipfs/Qmby13n3rqVwki7HYPMpuWwpHNFPRr5Bm5dTr1mNGrqcnM"
+			]
+		},
+		"contracts/tpt.sol": {
+			"keccak256": "0x6f710b38688795908a9e3f4541c242b4cb5c106aa78aeea6c72845a0a93bb4b1",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://c759f0281627dbaa8fd0831f2b3e64fe0cd5226f216433ab050a6f977e291d3f",
+				"dweb:/ipfs/QmTk5GgWZPUXdw1ppbpvkonJMJWDShqk6uQQiyZT67pkdm"
+			]
+		}
+	},
+	"version": 1
+}
